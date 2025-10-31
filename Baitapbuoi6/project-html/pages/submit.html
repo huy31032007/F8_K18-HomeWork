@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Submit</title>
+</head>
+<body>
+<ul>
+    <li><a href="./courses.html">Courses</a></li>
+    <li><a href="./lab.html">Lab</a></li>
+    <li><a href="./submit.html">Submit</a></li>
+    <li><a href="./contact.html">Contact</a></li>
+    <li><a href="./about.html">About</a></li>
+</ul>
+<form action="https://api-gateway.fullstack.edu.vn/action_page.php" method="post">
+    <label for="tên">Tên</label> <input id="tên" type="text" placeholder="Nhập họ tên" value="mặc định" name="name"><br/>
+    <label for="email">Email</label> <input id="email" type="email" placeholder="Nhập email" name="email"><br/>
+    <label for="mật khẩu">Mật khẩu</label> <input id="mật khẩu" type="password" placeholder="Nhập mật khẩu" name="password"><br/>
+    <label for="tuổi">Tuổi</label> <input type="number" id="tuổi" placeholder="Nhập tuổi" name="tuổi"><br/>
+    <label for="category">Category:</label>
+    <select id="category" name="Category">
+        <option>HTML CSS</option>
+        <option value="Javascript">Javascript</option>
+        <option value="Saas">Saas</option>
+    </select><br/>
+
+<input type="submit" value="Gửi">
+</form>
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lab</title>
+</head>
+<body>
+<ul>
+    <li><a href="./courses.html">Courses</a></li>
+    <li><a href="./lab.html">Lab</a></li>
+    <li><a href="./submit.html">Submit</a></li>
+    <li><a href="./contact.html">Contact</a></li>
+    <li><a href="./about.html">About</a></li>
+</ul>
+<form action="lab.html" method="get">
+    <input type="text" name="q" placeholder="Tìm kiếm...."><br/>
+    <span>Trình độ:</span> <br/>
+    <label for="beginner">Beginner</label><input id="beginner" type="checkbox" name="level">
+    <label for="intermediate">Intermediate</label><input id="intermediate" type="checkbox" name="level">
+    <label for="advanced">Advanced</label><input id="advanced" type="checkbox" name="level"><br/>
+    <span>Hình thức:</span><br/>
+    <label for="online">Online</label><input id="online" type="radio" name="mode[]">
+    <label for="offline">Offline</label><input id="offline" type="radio" name="mode[]"> <br/>
+    <select>
+        <option>Frontend</option>
+        <option>Backend</option>
+        <option>DevOps</option>
+    </select><br/>
+    <input type="submit">
+    <input type="reset">
+</form>
+</body>
+</html>
