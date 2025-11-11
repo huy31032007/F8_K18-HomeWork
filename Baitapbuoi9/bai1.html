@@ -39,7 +39,59 @@
             background-color: #fee2e2;
             color: #7f1d1d;
         }
-        #Blue
+        #Blue:checked + label{
+            background-color: #dbeafe;
+            color: #1d4ed8;
+        }
+        #Blue:checked ~ .color .color-blue{
+            background-color: #dbeafe;
+            color: #1d4ed8;
+        }
+        #Green:checked + label{
+            background-color: #dcfce7;
+            color: #166534;
+        }
+        #Green:checked ~ .color .color-green{
+            background-color: #dcfce7;
+            color: #166534;
+        }
+        #VI:checked + label {
+            background-color: #bbf7d0;
+            color: #166534;
+        }
+        #VI:checked ~ .color .vietnam{
+            color: #166534;
+        }
+        #EN:checked +label{
+            color:#1d4ed8;
+            background-color:#bfdbfe;
+        }
+        #EN:checked ~ .color .english{
+            color: #1d4ed8;
+        }
+        #opt1:checked + label{
+            background-color: #fef3c7;
+            color: #92400e;
+        }
+        #opt1:checked ~ .color .Description {
+            background-color: #fef3c7;
+            color: #92400e,
+        }
+        #opt2:checked +label{
+            background-color: #bbf7d0;
+            color: #15803d;
+        }
+        #opt2:checked ~ .color .Eco {
+            background-color: #bbf7d0;
+            color: #166534;
+        }
+        #opt3:checked + label{
+            background-color: #fee2e2;
+            color: #b91c1c;
+        }
+        #opt3:checked ~
+
+
 
 
 
@@ -71,20 +123,21 @@
     <label for="EN">EN</label>
 <!--Tuỳ chọn bổ sung-->
     <p>Tuỳ chọn bổ sung (Options - Checkbox)</p>
-    <input type="checkbox" id="Hiển thị mô tả nâng cao" name="option">
-    <label for="Hiển thị mô tả nâng cao">Hiển thị mô tả nâng cao</label>
-    <input type="checkbox" id="Bật chế Eco" name="option">
-    <label for="Bật chế Eco">Bật chế Eco</label>
-    <input type="checkbox" id="Hiển thị cảnh báo quan trọng" name="option">
-    <label for="Hiển thị cảnh báo quan trọng">Hiển thị cảnh báo quan trọng</label>
+    <input type="checkbox" id="opt1" name="option">
+    <label for="opt1">Hiển thị mô tả nâng cao</label>
+    <input type="checkbox" id="opt2" name="option">
+    <label for="opt2">Bật chế Eco</label>
+    <input type="checkbox" id="opt3" name="option">
+    <label for="opt3">Hiển thị cảnh báo quan trọng</label>
 
 <div class="color">
     <p class="color-light"> Theme Light: Giao diện sáng, chữ đen</p>
     <p class="color-dark"> Theme Dark: Giao diện , chữ sáng</p>
     <p class="color-red"> Màu Red: Được nhấn mạnh khi chọn Red</p>
     <p class="color-blue"> Màu Blue: Được nhấn mạnh khi chọn Blue<p>
-    <p class="VI">[VI]Xin chào bạn! Khi chọn VI, dòng này rõ hơn</p>
-    <p class="EN">[EN]Hello, world! Khi chọn EN, dòng này rõ hơn</p>
+    <p class="color-green">Màu Green: Được nhấn mạnh khi chọn Green</p>
+    <p class="vietnam">[VI]Xin chào bạn! Khi chọn VI, dòng này rõ hơn</p>
+    <p class="english">[EN]Hello, world! Khi chọn EN, dòng này rõ hơn</p>
     <p class="Description">Mô tả nâng cao: Giải thích kĩ hơn về cách các lựa chọn đang ảnh hưởng giao diện</p>
     <p class="Eco">Chế độ Eco: mô phỏng trạng thái tiết kiệm tài nguyên cho giao diện</p>
     <p class="crucial">Cảnh báo quan trọng: khu vực dùng để nhấn mạnh thông tin hệ thống</p>
