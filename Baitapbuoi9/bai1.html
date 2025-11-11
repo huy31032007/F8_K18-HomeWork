@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bai 1</title>
+    <style>
+        div h1 {
+            background-color: orange;
+            color: white;
+        }
+        label{
+            background-color: #e9f4f4;
+        }
+        #Light:checked + label{
+                background-color: #f6e7ac;
+                color: black;
+        }
+        #Light:checked ~ .color .color-light{
+            background-color: #fff8cc;
+            color: #111827;
+        }
+        #Dark:checked + label {
+            background-color: black;
+            color: white;
+        }
+
+        #Dark:checked ~ .color .color-dark{
+            background-color: #111827;
+            color: #f9fafb;
+        }
+        #Red:checked + label{
+            background-color: #fee2e2;
+            color: #991b1b;
+        }
+        #Red:checked ~ .color .color-red{
+            background-color: #fee2e2;
+            color: #7f1d1d;
+        }
+        #Blue
+
+
+
+    </style>
+</head>
+<body>
+<div>
+    <h1>Trung tâm cấu hình giao diện (Demo)</h1>
+</div>
+<!--Theme-->
+    <p>Chọn giao diện (Theme):</p>
+    <input type="radio" id="Light" name="theme">
+    <label for="Light">Light</label>
+    <input type="radio" id="Dark" name="theme">
+    <label for="Dark">Dark</label>
+<!--Color-->
+    <p>Chọn màu chủ đạo</p>
+    <input type="radio" id="Red" name="color">
+    <label for="Red">Red</label>
+    <input type="radio" id="Blue" name="color">
+    <label for="Blue">Blue</label>
+    <input type="radio" id="Green" name="color">
+    <label for="Green">Green</label>
+<!--Language-->
+    <p>Chọn ngôn ngữ (Language)</p>
+    <input type="radio" id="VI" name="language">
+    <label for="VI">VI</label>
+    <input type="radio" id="EN" name="language">
+    <label for="EN">EN</label>
+<!--Tuỳ chọn bổ sung-->
+    <p>Tuỳ chọn bổ sung (Options - Checkbox)</p>
+    <input type="checkbox" id="Hiển thị mô tả nâng cao" name="option">
+    <label for="Hiển thị mô tả nâng cao">Hiển thị mô tả nâng cao</label>
+    <input type="checkbox" id="Bật chế Eco" name="option">
+    <label for="Bật chế Eco">Bật chế Eco</label>
+    <input type="checkbox" id="Hiển thị cảnh báo quan trọng" name="option">
+    <label for="Hiển thị cảnh báo quan trọng">Hiển thị cảnh báo quan trọng</label>
+
+<div class="color">
+    <p class="color-light"> Theme Light: Giao diện sáng, chữ đen</p>
+    <p class="color-dark"> Theme Dark: Giao diện , chữ sáng</p>
+    <p class="color-red"> Màu Red: Được nhấn mạnh khi chọn Red</p>
+    <p class="color-blue"> Màu Blue: Được nhấn mạnh khi chọn Blue<p>
+    <p class="VI">[VI]Xin chào bạn! Khi chọn VI, dòng này rõ hơn</p>
+    <p class="EN">[EN]Hello, world! Khi chọn EN, dòng này rõ hơn</p>
+    <p class="Description">Mô tả nâng cao: Giải thích kĩ hơn về cách các lựa chọn đang ảnh hưởng giao diện</p>
+    <p class="Eco">Chế độ Eco: mô phỏng trạng thái tiết kiệm tài nguyên cho giao diện</p>
+    <p class="crucial">Cảnh báo quan trọng: khu vực dùng để nhấn mạnh thông tin hệ thống</p>
+</div>
+</body>
+</html>
