@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .box {
+            display: inline-block;
+            padding: 10px;
+        }
+        .F{
+        display: inline-block;
+        padding: 20px;
+        }
+        .box1{
+            width: 100px;
+            height: 100px;
+            background-color: white;
+            border: solid 2.5px red;
+        }
+        .box2{
+            width: 225px;
+            height: 100px;
+            background-color: white;
+            border: solid 2.5px #5d5df4;
+        }
+        .box3 {
+           width: 0;
+            border-style: solid;
+            border-width: 100px 50px 100px 50px;
+            border-color: white white #45e845 white;
+            padding: 0;
+        }
+        .box4 {
+            width: 0;
+            border-style: solid;
+            border-width: 100px 50px 100px 50px;
+            border-color: orange;
+            border-right: 60px solid transparent;
+            border-left: 60px solid transparent;
+            border-bottom: 60px solid transparent;
+            padding: 0;
+        /*    Cach nay em test*/
+        }
+        .box5 {
+            width: 0;
+            border-style: solid;
+            border-width: 50px 100px 50px 100px;
+            border-color: white purple white white;
+            padding: 0;
+        }
+        .box6 {
+            width: 0;
+            border-style: solid;
+            border-width: 50px 100px 50px 100px;
+            border-color: white white white #e49803;
+            padding: 0;
+        }
+        .box7 {
+            width: 0;
+            border-style: solid;
+            border-width: 100px 50px 100px 50px;
+            border-color: white white #43e443 white;
+            padding: 50px;
+        }
+        .box8 {
+            width: 0;
+            border-style: solid;
+            border-width: 100px 150px 100px 150px;
+            border-color: white white darkblue white;
+            padding: 0;
+        }
+        .box9 {
+            width: 0;
+            border-style: solid;
+            border-width: 200px 50px 200px 50px;
+            border-color: white white darkorange white;
+            padding: 0;
+        }
+        .box10 {
+            width: 0;
+            border-style: solid;
+            border-width: 100px 100px 100px 100px;
+            border-color: white white brown white;
+            padding: 0;
+        }
+        .box11 {
+            width: 0;
+            border-style: solid;
+            border-width: 50px 200px 50px 200px;
+            border-color: white white white greenyellow;
+            padding: 0;
+        }
+        .box12 {
+            width: 0;
+            border-style: solid;
+            border-width: 50px 200px 50px 200px;
+            border-color: white purple white white;
+            padding: 0;
+        }
+        .box13 {
+            width: 0;
+            border-style: solid;
+            border-width: 50px 150px 50px 150px;
+            padding: 0;
+            border-color: #c12828;
+            border-right: 100px solid transparent;
+        }
+        .F > .f_head {
+            width: 50px;
+            height: 100px;
+            border-style: solid;
+            padding: 25px;
+            border-color: red;
+            border-width: 25px;
+            border-right:0 solid transparent;
+        }
+        .F > .f_footer {
+            width: 50px;
+            height: 100px;
+            border-style: solid;
+            padding: 25px;
+            border-color: red;
+            border-width: 0px 25px 25px 25px;
+            border-right:0 solid transparent;
+            border-bottom: 0 solid transparent;
+        }
+        .F > .head {
+            width: 50px;
+            height: 75px;
+            border-style: solid;
+            padding: 25px;
+            border-color: red;
+            border-width: 25px 25px 0px 25px;
+        }
+        .F > .footer {
+            width: 50px;
+            height: 100px;
+            border-style: solid;
+            padding: 25px;
+            border-color: red;
+            border-width: 25px 25px 25px 25px;
+        }
+
+    </style>
+</head>
+<body>
+<!--Hình vuông-->
+<div class="box">
+    <div class="box1" ></div>
+    <p>1. Hình vuông</p>
+</div>
+<!--Hình chữ nhật-->
+<div class="box">
+    <div class="box2"></div>
+    <p>2. Hình chữ nhật</p>
+</div>
+<!--Hình tam giác lên-->
+<div class="box">
+    <div class="box3"></div>
+    <p>3. Tam giác lên</p>
+</div>
+<!--Tam giác xuống-->
+<div class="box">
+    <div class="box4"></div>
+    <p>4. Tam giác xuống</p>
+</div>
+<!--Tam giác trái-->
+<div class="box">
+    <div class="box5"></div>
+    <p>5. Tam giác trái</p>
+</div>
+<!--Tam giác phải-->
+<div class="box">
+    <div class="box6"></div>
+    <p>6. Tam giác phải</p>
+</div>
+<!--Hình thang-->
+<div class="box">
+    <div class="box7"></div>
+    <p>7. Hình thang</p>
+</div>
+<!--Tam giác rộng-->
+<div class="box">
+    <div class="box8"></div>
+    <p>8. Tam giác rộng</p>
+</div>
+<!--Tam giác nhọn-->
+<div class="box">
+    <div class="box9"></div>
+    <p>9. Tam giác nhọn</p>
+</div>
+<!--Tam giác cân-->
+<div class="box">
+    <div class="box10"></div>
+    <p>10. Tam gíac cân</p>
+</div>
+<!--Mũi tên phải-->
+<div class="box">
+    <div class="box11"></div>
+    <p>11. Mũi tên phải</p>
+</div>
+<!--Mũi tên trái-->
+<div class="box">
+    <div class="box12"></div>
+    <p>12. Mũi tên trái</p>
+</div>
+<!--Ribbon/ Lá cờ-->
+<div class="box">
+    <div class="box13"></div>
+    <p>13. Ribbon/ Lá cờ</p>
+</div>
+<br>
+
+<div class="F">
+    <div class="f_head"></div>
+    <div class="f_footer"></div>
+</div>
+<div class="F">
+    <div class="head"></div>
+    <div class="footer"></div>
+</div>
+</body>
+</html>
