@@ -46,7 +46,7 @@
             border: 10px solid darkorange;
             padding: 50px;
         }
-        .section:nth-of-type(3) .aside .aside__block:nth-of-type(2) > .aside__list .aside__item:last-of-type{
+        .section:nth-of-type(3) .aside .aside__block > .aside__list .aside__item:last-of-type{
             border-top: 20px solid yellow;
             padding: 20px;
         }
@@ -54,10 +54,11 @@
             background-color: #f6ddb5;
             border: 15px solid red;
         }
-        #toggle-highlight:checked ~ .aside .aside__block:nth-of-type(2) > .aside__list .aside__item:last-of-type{
+        #toggle-highlight:checked ~ .aside .aside__block > .aside__list .aside__item:last-of-type{
             background-color: #d8d8f8;
             border: 1px solid black;
         }
+    /*    anh oi tại sao cái highlight lại chọc đc vào thẳng của cái aside v a, em tưởng là nó phải di qua section như mấy cái ở trên chứ anh. Em để là section thì nó ko nhận thẻ luôn, còn xoá section đi thì lại được a. Tại aside ở sâu trong section mà có nhiều thẻ aside bên trên nữa mà a, nên đáng ra phải qua section 3 thì mới chọc đc đúng aside này chứ a nhỉ*/
     </style>
 </head>
 <body>
