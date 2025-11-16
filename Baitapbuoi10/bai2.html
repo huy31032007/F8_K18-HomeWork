@@ -26,8 +26,38 @@
             border: 10px solid red;
             margin: 20px
         }
-
-
+        .section:nth-of-type(2) .post__section > .post__list .post__item:nth-child(3) {
+            background-color: #ffd37a;
+        }
+        .section:nth-of-type(2) .post__body .post__text:nth-of-type(2) {
+            background-color: #ffd37a;
+            border: 2px solid red;
+            padding: 5px;
+        }
+        .section:nth-of-type(3) .aside .aside__block:nth-of-type(1) > .aside__list {
+            border: 10px solid darkorange;
+            padding: 50px;
+        }
+        .section:nth-of-type(3) .aside .aside__block:nth-of-type(1) > .aside__list .aside__item:last-of-type {
+            border-top: 20px solid yellow;
+            padding: 20px;
+        }
+        .section:nth-of-type(3) .aside .aside__block:nth-of-type(2) > .aside__list{
+            border: 10px solid darkorange;
+            padding: 50px;
+        }
+        .section:nth-of-type(3) .aside .aside__block:nth-of-type(2) > .aside__list .aside__item:last-of-type{
+            border-top: 20px solid yellow;
+            padding: 20px;
+        }
+        .section:nth-of-type(2) .post__section > .post__subtitle {
+            background-color: #f6ddb5;
+            border: 15px solid red;
+        }
+        #toggle-highlight:checked ~ .aside .aside__block:nth-of-type(2) > .aside__list .aside__item:last-of-type{
+            background-color: #d8d8f8;
+            border: 1px solid black;
+        }
     </style>
 </head>
 <body>
@@ -149,7 +179,7 @@
                                 <h3 class="story__subtitle">Ghi chú kỹ thuật</h3>
                                 <ul class="story__list">
                                     <li class="story__item">Charge 200°C</li>
-                                    <li class="story__item">First crack ~ 9’30”</li>
+                                    <li class="story__item">First crack ~ 9’30</li>
                                     <li class="story__item">Drop 12’10”</li>
                                 </ul>
                             </section>
