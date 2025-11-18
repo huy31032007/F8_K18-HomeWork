@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url("https://images.unsplash.com/photo-1579547621706-1a9c79d5c9f1?q=80&w=2070&auto=format&fit=crop");
+    margin: 2rem;
+}
+.nen{
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 2rem;
+}
+.trangchu{
+    text-align: center;
+.c1{
+    font-size: 4rem;
+    color: #1e293b;
+    font-weight: 700;
+}
+.c2 {
+    font-size: 4rem;
+    color: #c084fc;
+    font-weight: 700;
+}
+.header > .noidung{
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 400;
+    margin: 4rem;
+}
+.header > .box #box-2 {
+    padding: 1rem 3rem 1rem 3rem;
+    border-radius: 3rem;
+    background-color: #a855f7;
+    color: white;
+    font-size: 1.125rem;
+    font-weight: 600;
+    border: 1rem;
+}
+    .header > .box #box-2:hover {
+        background-color: #9333ea;
+    }
+}
+.trangchu > .box-avatar {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 3rem;
+    border-style: solid;
+    border-width: 0.25rem;
+    border-color: rgba(181, 162, 189, 0.6);
+    margin-top: 4.5rem;
+}
+.trangchu > .mota {
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+.trangchu > .mota > span {
+color: #a530a5;
+}
+.trangchu > .focus {
+    font-weight: 400;
+}
+.trangchu > .loikhuyen {
+    background-color: rgba(166, 151, 182, 0.35);
+    border-radius: 2rem;
+    padding: 1.5rem;
+    margin: 2.5rem;
+}
+.trangchu > .loikhuyen > h2 {
+    font-size: 1,375rem;
+    font-weight: 700;
+}
+.trangchu > .loikhuyen > p {
+    font-size: 1,125rem;
+    font-weight: 400;
+}
+#focus:checked ~ .loikhuyen {
+    color: #6b21a8;
+    background-color: rgba(42, 42, 225, 0.35);
+}
+.trangchu > .feature {
+    text-align: center;
+    margin: 5rem;
+}
+.trangchu > .feature .anhtinhnang {
+    width: 1.2rem;
+    height: 1.2rem;
+}
+.trangchu > .feature .tinhnang {
+     font-weight: 600;
+     font-size: 1rem;
+     padding: 2rem;
+}
+hr {
+    margin-top: 1rem;
+    border: 0.1rem solid rgba(192, 132, 252, 0.6)
+}
+footer{
+    text-align: center;
+    background-color: white;
+    padding: 2.5rem;
+}
+
+
