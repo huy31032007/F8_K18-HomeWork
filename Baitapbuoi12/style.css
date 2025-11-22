@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.html{
+    font-size: 16px;
+}
+.nen{
+    background-image: url("https://images.unsplash.com/photo-1579547621706-1a9c79d5c9f1?q=80&w=2070&auto=format&fit=crop");
+    padding: 2rem;
+}
+.trangchu{
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 2rem;
+    /*text-align: center;*/
+    margin: 1rem;
+    padding: 5rem;
+.header {
+    text-align: center;
+}
+.footer {
+text-align: center;}
+}
+    .c1{
+        font-size: 4rem;
+        color: #1e293b;
+        font-weight: 700;
+    }
+    .c2 {
+        font-size: 4rem;
+        color: #c084fc;
+        font-weight: 700;
+    }
+    .header > .noidung{
+        text-align: center;
+        font-size: 1.25rem;
+        font-weight: 400;
+        margin: 4rem;
+    }
+    .header > .register .register-1 {
+        padding: 1rem 3rem 1rem 3rem;
+        border-radius: 3rem;
+        background-color: #a855f7;
+        color: white;
+        font-size: 1.125rem;
+        font-weight: 600;
+        border: 1rem;
+    }
+    .header > .register .register-1:hover {
+        background-color: #9333ea;
+    }
+.trangchu > .footer .box-avatar {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 3rem;
+    border-style: solid;
+    border-width: 0.25rem;
+    border-color: rgba(181, 162, 189, 0.6);
+    margin-top: 4.5rem;
+}
+.trangchu > .footer .mota {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.trangchu > .footer .mota > strong {
+    color: #a530a5;
+}
+.trangchu > .footer .focus {
+    font-weight: 400;
+}
+.trangchu > .footer .loikhuyen {
+    background-color: rgba(166, 151, 182, 0.35);
+    border-radius: 2rem;
+    padding: 1.5rem;
+    margin: 2.5rem;
+}
+.trangchu > .footer .loikhuyen > h2 {
+    font-size: 1,375rem;
+    font-weight: 700;
+    line-height: 3rem;
+}
+.trangchu > .footer .loikhuyen > p {
+    font-size: 1,125rem;
+    font-weight: 400;
+}
+#focus:checked ~ .loikhuyen {
+    color: #6b21a8;
+    background-color: rgba(42, 42, 225, 0.35);
+}
+.trangchu > .footer .feature {
+    margin: 5rem;
+}
+.anhtinhnang {
+    width: 1.2rem;
+    height: 1.2rem;
+}
+.trangchu > .footer .feature .tinhnang {
+    font-weight: 600;
+    font-size: 0.7rem;
+    width: 1rem;
+    margin: 2rem 0;
+}
+
+.last{
+    text-align: center;
+    background-color: white;
+    margin-top: 5rem;
+}
+ .boxunder{
+     padding:2.5rem;
+     border-top: 0.1rem solid #ca24ca;
+ }
+.modal-overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.23);
+    display: none;
+}
+#register-free:checked ~ .modal-overlay {
+    display: block;
+}
+.free-course {
+    width: 28rem;
+    border: 0.1rem solid black;
+    margin: auto;
+    margin-top: 3rem;
+    border-radius: 2rem;
+    position: relative;
+    padding: 2rem;
+    background-color: white;
+}
+.trangchu > .free-course > .free-course--content {
+    text-align: center;
+}
+.trangchu > .free-course > .free-course--content > .free-course--text {
+    color: #dddddd;
+}
+.trangchu > .free-course > .free-course--benefit {
+    margin: 1rem;
+}
