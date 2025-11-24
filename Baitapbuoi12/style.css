@@ -128,9 +128,9 @@ text-align: center;}
     width: 28rem;
     border: 0.1rem solid black;
     margin: auto;
-    margin-top: 1rem;
+    margin-top: 3rem;
     border-radius: 2rem;
-    position: absolute;
+    position: relative ;
     padding: 2rem;
     background-color: white;
     display: none;
