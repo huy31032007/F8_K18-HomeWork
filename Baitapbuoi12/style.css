@@ -13,7 +13,6 @@
 .trangchu{
     background-color: rgba(255, 255, 255, 0.4);
     border-radius: 2rem;
-    /*text-align: center;*/
     margin: 1rem;
     padding: 5rem;
 .header {
@@ -114,23 +113,28 @@ text-align: center;}
      border-top: 0.1rem solid #ca24ca;
  }
 .modal-overlay {
-    position: absolute;
+    position: fixed;
     inset: 0;
     background-color: rgba(0, 0, 0, 0.23);
     display: none;
 }
-#register-free:checked ~ .modal-overlay {
+#register-free:checked ~ .modal-overlay{
+    display: block;
+}
+#register-free:checked ~ .free-course {
     display: block;
 }
 .free-course {
     width: 28rem;
     border: 0.1rem solid black;
     margin: auto;
-    margin-top: 3rem;
+    margin-top: 1rem;
     border-radius: 2rem;
-    position: relative;
+    position: absolute;
     padding: 2rem;
     background-color: white;
+    display: none;
+    z-index: 999;
 }
 .trangchu > .free-course > .free-course--content {
     text-align: center;
@@ -143,12 +147,13 @@ text-align: center;}
 .trangchu > .free-course > .free-course--content > .free-course--title {
     font-size: 1.5rem;
     line-height: 2rem;
+    margin-bottom: 1rem;
 }
 .trangchu > .free-course > .free-course--benefit {
     margin: 1rem;
 }
 
-.trangchu > .free-course > .star-now {
+.trangchu > .free-course > .start-now {
     border: 1rem;
     border-radius: 1rem;
     text-align: center;
@@ -158,4 +163,13 @@ text-align: center;}
     margin-top: 2rem;
     font-weight: 600;
     font-size: 1.5rem;
+}
+.trangchu > .free-course > .free-course--end {
+    text-align: center;
+    color: #c084fc;
+    margin-top: 1rem;
+}
+.trangchu > .free-course > .free-course--end .end-1, .end-2 {
+    display: inline-block;
+    padding: 1rem;
 }
