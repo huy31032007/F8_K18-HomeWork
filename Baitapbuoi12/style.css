@@ -15,40 +15,40 @@
     border-radius: 2rem;
     margin: 1rem;
     padding: 5rem;
-.header {
-    text-align: center;
-}
-.footer {
-text-align: center;}
-}
-    .c1{
-        font-size: 4rem;
-        color: #1e293b;
-        font-weight: 700;
-    }
-    .c2 {
-        font-size: 4rem;
-        color: #c084fc;
-        font-weight: 700;
-    }
-    .header > .noidung{
+    .header {
         text-align: center;
-        font-size: 1.25rem;
-        font-weight: 400;
-        margin: 4rem;
     }
-    .header > .register .register-1 {
-        padding: 1rem 3rem 1rem 3rem;
-        border-radius: 3rem;
-        background-color: #a855f7;
-        color: white;
-        font-size: 1.125rem;
-        font-weight: 600;
-        border: 1rem;
-    }
-    .header > .register .register-1:hover {
-        background-color: #9333ea;
-    }
+    .footer {
+        text-align: center;}
+}
+.c1{
+    font-size: 4rem;
+    color: #1e293b;
+    font-weight: 700;
+}
+.c2 {
+    font-size: 4rem;
+    color: #c084fc;
+    font-weight: 700;
+}
+.header > .noidung{
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 400;
+    margin: 4rem;
+}
+.header > .register .register-1 {
+    padding: 1rem 3rem 1rem 3rem;
+    border-radius: 3rem;
+    background-color: #a855f7;
+    color: white;
+    font-size: 1.125rem;
+    font-weight: 600;
+    border: 1rem;
+}
+.header > .register .register-1:hover {
+    background-color: #9333ea;
+}
 .trangchu > .footer .box-avatar {
     width: 3rem;
     height: 3rem;
@@ -108,10 +108,10 @@ text-align: center;}
     background-color: white;
     margin-top: 5rem;
 }
- .boxunder{
-     padding:2.5rem;
-     border-top: 0.1rem solid #ca24ca;
- }
+.boxunder{
+    padding:2.5rem;
+    border-top: 0.1rem solid #ca24ca;
+}
 .modal-overlay {
     position: fixed;
     inset: 0;
@@ -172,4 +172,35 @@ text-align: center;}
 .trangchu > .free-course > .free-course--end .end-1, .end-2 {
     display: inline-block;
     padding: 1rem;
+}
+.close-btn {
+    font-size: 2rem;
+    font-weight: bold;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+.trangchu > .header > .register, .advise{
+    display: inline-block;
+}
+.advise {
+    background-color: orange;
+    color: white;
+    padding: 1rem 3rem 1rem 3rem;
+    border-radius: 3rem;
+    font-size: 1.125rem;
+    margin-left: 1rem;
+    font-weight: 600;
+}
+.modal-overlay1{
+   position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.23);
+    display: none;
+}
+.advise:hover{
+    background-color: #b37106;
+}
+#advise-now:checked ~ .modal-overlay1{
+    display: block;
 }
