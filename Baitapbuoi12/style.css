@@ -136,8 +136,26 @@ text-align: center;}
     text-align: center;
 }
 .trangchu > .free-course > .free-course--content > .free-course--text {
-    color: #dddddd;
+    color: #a3a0a0;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+.trangchu > .free-course > .free-course--content > .free-course--title {
+    font-size: 1.5rem;
+    line-height: 2rem;
 }
 .trangchu > .free-course > .free-course--benefit {
     margin: 1rem;
+}
+
+.trangchu > .free-course > .star-now {
+    border: 1rem;
+    border-radius: 1rem;
+    text-align: center;
+    background-color: #a855f7;
+    color: white;
+    padding: 1rem 3rem 1rem 3rem;
+    margin-top: 2rem;
+    font-weight: 600;
+    font-size: 1.5rem;
 }
