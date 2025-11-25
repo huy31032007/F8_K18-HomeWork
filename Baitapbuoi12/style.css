@@ -204,6 +204,9 @@
 #advise-now:checked ~ .modal-overlay1{
     display: block;
 }
+#advise-now:checked ~ .register-advise{
+    display: block;
+}
 .register-advise {
     width: 28rem;
     border: 0.1rem solid black;
@@ -213,7 +216,7 @@
     position: relative;
     padding: 2rem;
     background-color: white;
-    /*display: none;*/
+    display: none;
     z-index: 999;
     height: auto;
 }
@@ -272,4 +275,61 @@
 }
 .text-field label span{
     color: red;
+}
+.register-advise .course-list{
+    margin: 0.5rem 1rem;
+}
+.course-list--option {
+    margin: 0.5rem 0;
+}
+.button{
+    border: 0.1rem solid black;
+    color: white;
+    background-color: #fab001;
+    padding: 1rem;
+    border-radius: 3rem;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 1rem;
+}
+.close-btn-1 {
+    font-size: 2rem;
+    font-weight: bold;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+.faq-header:hover {
+    background-color: rgba(192, 132, 252, 0.15)
+}
+.faq-body {
+    margin: 1rem auto;
+    width: 40%;
+}
+.faq-item {
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 1rem;
+    padding: 2rem;
+    border: 1px solid rgba(192, 132, 252, 0.3);
+}
+.faq-answer {
+    margin-top: 0.5rem;
+    display: none;
+}
+.faq-title {
+    display: inline-block;
+    width: calc(100% - 1.2rem);
+}
+.open, .close {
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: 400;
+}
+.close{
+    display: none;
+}
+#faq-1:checked + .faq-item .faq-anwser,
+#faq-2:checked + .faq-item .faq-anwser,
+#faq-3:checked + .faq-item .faq-anwser {
+    display: block;
 }

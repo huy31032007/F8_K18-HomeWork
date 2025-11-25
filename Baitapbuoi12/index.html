@@ -28,6 +28,7 @@
         <div class="register-advise">
             <form action="https://api-gateway.fullstack.edu.vn/action_page.php" method="post">
                 <div class="register-advise--content">
+                    <label for="advise-now" class="close-btn-1">&times</label>
                     <div class="register-advise--title"><strong>Đăng kí tư vấn</strong></div>
                     <div class="register-advise--text">Điền thông tin để được tư vấn lộ trình học phù hợp</div>
                     <div class="text-field">
@@ -62,7 +63,7 @@
                     </div>
                 </div>
                 <div class="course-list">
-                    <h1>Khoá học quan tâm <span>*</span></h1>
+                    <h4>Khoá học quan tâm <span>*</span></h4>
                     <div class="course-list--option">
                         <input id="html-css" type="checkbox" name="course" value="HTML-CSS">
                         <label for="html-css">HTML-CSS</label>
@@ -72,10 +73,19 @@
                         <label for=javascript>Javascript</label>
                     </div>
                     <div class="course-list--option">
-                        <input id="reactjs" type="checkbox" name="course" value="Javascript">
-                        <label for="reactjs">Javascript</label>
+                        <input id="FE" type="checkbox" name="course" value="FE">
+                        <label for="FE">Front-end lộ trình</label>
+                    </div>
+                    <div class="course-list-option">
+                        <input id="ReactJS" type="checkbox" name="course" value="ReactJS">
+                        <label for="ReactJS">ReactJS</label>
+                    </div>
+                    <div class="course-list-option">
+                        <input id="no" type="checkbox" name="course" value="no">
+                        <label for="no">Chưa rõ-cần tư vấn</label>
                     </div>
                 </div>
+                <div class="button">Đăng kí tư vấn ngay</div>
             </form>
         </div>
         <div class="free-course">
@@ -127,6 +137,74 @@
 
                 <img src="ảnh/960px-Sign-check-icon-removebg-preview.png" alt="tick" class="anhtinhnang"/>
                 <span class="tinhnang">Cộng đồng F8 hỗ trợ hỏi đáp mỗi ngày</span>
+            </div>
+        </div>
+        <div class="faq">
+            <h2 style="text-align:center">Câu hỏi thường gặp</h2>
+            <div class="faq-body">
+                <input type="checkbox" id="faq-1" class="faq-toggle" hidden>
+                <div class="faq-item">
+                    <div class="faq-header">
+                        <h4 class="faq-title">Tôi có thể ứng dụng được ngay sau khi học không?</h4>
+                        <label for="faq-1">
+                            <span class="open">+</span>
+                            <span class="close">-</span>
+                        </label>
+                    </div>
+                    <hr>
+                    <div class="faq-answer">
+                        <p>
+                            Chắc chắn rồi! F8 luôn hướng tới các bạn học đi đôi với hành.
+                            Vì thế, sau mỗi bài học video hoặc văn bản, bạn sẽ được làm rất
+                            nhiều bài tập để củng cố kiến thức, nắm vững cú pháp và thử sức
+                            với nhiều thách thức code mới. Quan trọng nhất là bạn cần hoàn
+                            thiện các dự án thực chiến – được thiết kế bằng Figma – thì mới
+                            có thể hoàn thành khóa học nhé.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="faq-body">
+                <input type="checkbox" id="faq-2" class="faq-toggle" hidden>
+                <div class="faq-item">
+                    <div class="faq-header">
+                        <h4 class="faq-title">Tôi có được hỗ trợ trong quá trình học không?</h4>
+                        <label for="faq-2">
+                            <span class="open">+</span>
+                            <span class="close">-</span>
+                        </label>
+                    </div>
+                    <hr>
+                    <div class="faq-answer">
+                        <p>
+                            Tất nhiên rồi! Mặc dù bài tập đã có hướng dẫn, video chưa bài tương ứng và được giải thích chi tiết
+                            nhất có thể nhưng nếu bạn gặp khó, bạn không cần lo lắng không biết hỏi ai hay không có người hướng dẫn.
+                            Tại mỗi bài học ở F8, bạn luôn có thể đặt câu hỏi, trao đổi và tương tác với các bạn cùng học.
+                            Ngoài ra, chuyên viên hỗ trợ F8 sẽ luôn tận tình hướng dẫn nếu bạn gặp khó khăn bạn nhé.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="faq-body">
+                <input type="checkbox" id="faq-3" class="faq-toggle" hidden>
+                <div class="faq-item">
+                    <div class="faq-header">
+                        <h4 class="faq-title">Tôi muốn hỏi thì đăng câu hỏi ở đâu?</h4>
+                        <label for="faq-3">
+                            <span class="open">+</span>
+                            <span class="close">-</span>
+                        </label>
+                    </div>
+                    <hr>
+                    <div class="faq-answer">
+                        <p>
+                            Tại mỗi bài học luôn có phần đăng câu hỏi.
+                            Bạn chỉ cần đăng câu hỏi mới và chờ câu trả lời của đội ngũ hỗ trợ trong ít phút sau đó.
+                            Ngoài ra, ngay chính các học viên trong khóa học cũng có thể tham gia hỗ trợ lẫn nhau
+                            nên bạn hãy yên tâm nhé!
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
