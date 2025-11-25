@@ -37,7 +37,7 @@
     font-weight: 400;
     margin: 4rem;
 }
-.header > .register .register-1 {
+.header >.register-1 {
     padding: 1rem 3rem 1rem 3rem;
     border-radius: 3rem;
     background-color: #a855f7;
@@ -46,7 +46,7 @@
     font-weight: 600;
     border: 1rem;
 }
-.header > .register .register-1:hover {
+.header >.register-1:hover {
     background-color: #9333ea;
 }
 .trangchu > .footer .box-avatar {
@@ -77,12 +77,12 @@
     margin: 2.5rem;
 }
 .trangchu > .footer .loikhuyen > h2 {
-    font-size: 1,375rem;
+    font-size: 1.375rem;
     font-weight: 700;
     line-height: 3rem;
 }
 .trangchu > .footer .loikhuyen > p {
-    font-size: 1,125rem;
+    font-size: 1.125rem;
     font-weight: 400;
 }
 #focus:checked ~ .loikhuyen {
@@ -203,4 +203,69 @@
 }
 #advise-now:checked ~ .modal-overlay1{
     display: block;
+}
+.register-advise {
+    width: 28rem;
+    border: 0.1rem solid black;
+    margin: auto;
+    margin-top: 3rem;
+    border-radius: 2rem;
+    position: relative;
+    padding: 2rem;
+    background-color: white;
+    /*display: none;*/
+    z-index: 999;
+}
+.trangchu > .register-advise > .register-advise--content > .register-advise--title, .register-advise--text{
+    text-align: center;
+}
+.trangchu > .register-advise > .register-advise--content > .register-advise--title {
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+.trangchu > .register-advise > .register-advise--content > .register-advise--text {
+    color: #808080;
+    margin-bottom: 1rem;
+}
+.text-field input {
+    border-radius: 0.3rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+    padding-right: 6rem;
+    border: #555454 solid 1px;
+    width: calc(100% - 1rem);
+    margin: 0.5rem;
+    outline-color: gainsboro;
+}
+.msg-box {
+    background-color: black;
+    color: white;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    display: inline-block;
+    font-size: 1rem;
+}
+.triangle{
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+    border-width: 1rem;
+    width: 0;
+    position: relative;
+    left: 3rem;
+}
+.information{
+    position: absolute;
+    margin-left: 1rem;
+    margin-top: -3rem;
+    display: none;
+}
+.text-field input[type="text"]:hover ~ .information{
+    display:block;
+}
+.text-field input[type="email"]:hover ~ .information {
+    display: block;
+}
+.register-advise > .text-field label {
+    font-weight: 600;
 }
