@@ -215,6 +215,7 @@
     background-color: white;
     /*display: none;*/
     z-index: 999;
+    height: auto;
 }
 .trangchu > .register-advise > form > .register-advise--content > .register-advise--title, .register-advise--text{
     text-align: center;
@@ -257,12 +258,18 @@
 .information{
     position: absolute;
     margin-left: 1rem;
-    margin-top: -3rem;
+    margin-top: -6rem;
     display: none;
 }
-.trangchu > .register-advise > form .text-field input[type="text"]:hover ~ .information{
+.text-field input[type="text"]:hover ~ .information{
     display:block;
 }
 .text-field input[type="email"]:hover ~ .information {
     display: block;
+}
+.text-field label {
+    font-weight: 600;
+}
+.text-field label span{
+    color: red;
 }
