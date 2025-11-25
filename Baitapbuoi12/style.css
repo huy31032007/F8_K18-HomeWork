@@ -216,15 +216,15 @@
     /*display: none;*/
     z-index: 999;
 }
-.trangchu > .register-advise > .register-advise--content > .register-advise--title, .register-advise--text{
+.trangchu > .register-advise > form > .register-advise--content > .register-advise--title, .register-advise--text{
     text-align: center;
 }
-.trangchu > .register-advise > .register-advise--content > .register-advise--title {
+.trangchu > .register-advise > form > .register-advise--content > .register-advise--title {
     font-weight: 600;
     font-size: 1.5rem;
     margin-bottom: 1rem;
 }
-.trangchu > .register-advise > .register-advise--content > .register-advise--text {
+.trangchu > .register-advise > form > .register-advise--content > .register-advise--text {
     color: #808080;
     margin-bottom: 1rem;
 }
@@ -260,12 +260,9 @@
     margin-top: -3rem;
     display: none;
 }
-.text-field input[type="text"]:hover ~ .information{
+.trangchu > .register-advise > form .text-field input[type="text"]:hover ~ .information{
     display:block;
 }
 .text-field input[type="email"]:hover ~ .information {
     display: block;
-}
-.register-advise > .text-field label {
-    font-weight: 600;
 }

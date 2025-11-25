@@ -26,40 +26,42 @@
         <input type="checkbox" id="advise-now" hidden>
         <label for="advise-now" class="modal-overlay1"></label>
         <div class="register-advise">
-            <div class="register-advise--content">
-                <div class="register-advise--title"><strong>Đăng kí tư vấn</strong></div>
-                <div class="register-advise--text">Điền thông tin để được tư vấn lộ trình học phù hợp</div>
-                <div class="text-field">
-                    <label for="name">Họ và tên <span>*</span></label> <br>
-                    <div class="information">
-                        <div class="msg-box">
-                            Nhập họ và tên đầy đủ của bạn
+            <form action="https://api-gateway.fullstack.edu.vn/action_page.php" method="post">
+                <div class="register-advise--content">
+                    <div class="register-advise--title"><strong>Đăng kí tư vấn</strong></div>
+                    <div class="register-advise--text">Điền thông tin để được tư vấn lộ trình học phù hợp</div>
+                    <div class="text-field">
+                        <label for="name">Họ và tên <span>*</span></label> <br>
+                        <div class="information">
+                            <div class="msg-box">
+                                    Nhập họ và tên đầy đủ của bạn
+                            </div>
+                            <div class="triangle"></div>
                         </div>
-                        <div class="triangle"></div>
+                        <input id="name" type="text" placeholder="Vu Quang Huy">
                     </div>
-                    <input id="name" type="text" placeholder="Vu Quang Huy">
-                </div>
-                <div class="text-field">
-                    <label for="sdt">Số điện thoại <span>*</span></label> <br>
-                    <div class="information">
-                        <div class="msg-box">
-                            Số điện thoại để chúng tôi liên hệ tư vấn
+                    <div class="text-field">
+                        <label for="sdt">Số điện thoại <span>*</span></label> <br>
+                        <div class="information">
+                            <div class="msg-box">
+                                    Số điện thoại để chúng tôi liên hệ tư vấn
+                            </div>
+                            <div class="triangle"></div>
                         </div>
-                        <div class="triangle"></div>
+                        <input id="sdt" type="text" placeholder="0123456789">
                     </div>
-                    <input id="sdt" type="text" placeholder="0123456789">
-                </div>
-                <div class="text-field">
-                    <label for="email">Email</label> <br>
-                    <div class="information">
-                        <div class="msg-box">
-                            Email nhận thông tin khoá học (không bắt buộc)
+                    <div class="text-field">
+                        <label for="email">Email</label> <br>
+                        <div class="information">
+                            <div class="msg-box">
+                                    Email nhận thông tin khoá học (không bắt buộc)
+                            </div>
+                            <div class="triangle"></div>
                         </div>
-                        <div class="triangle"></div>
+                        <input id="email" type="email" placeholder="0123456789">
                     </div>
-                    <input id="email" type="email" placeholder="0123456789">
                 </div>
-            </div>
+            </form>
         </div>
         <div class="free-course">
             <div class="free-course--content">
