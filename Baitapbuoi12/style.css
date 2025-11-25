@@ -328,8 +328,18 @@
 .close{
     display: none;
 }
-#faq-1:checked + .faq-item .faq-anwser,
-#faq-2:checked + .faq-item .faq-anwser,
-#faq-3:checked + .faq-item .faq-anwser {
+#faq-1:checked + .faq-item .faq-answer,
+#faq-2:checked + .faq-item .faq-answer,
+#faq-3:checked + .faq-item .faq-answer {
     display: block;
+}
+#faq-1:checked + .faq-item .faq-header .open,
+#faq-2:checked + .faq-item .faq-header .open,
+#faq-3:checked + .faq-item .faq-header .open {
+    display: none;
+}
+#faq-1:checked + .faq-item .faq-header .close,
+#faq-2:checked + .faq-item .faq-header .close,
+#faq-3:checked + .faq-item .faq-header .close {
+    display: inline;
 }
