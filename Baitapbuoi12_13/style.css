@@ -322,14 +322,14 @@
     border-radius: 8px;
     position: relative;
 }
-.open, .close {
-    display: inline-block;
-    font-size: 1rem;
-    font-weight: 600;
-
+.faq-title--icon{
+    position:absolute;
+    top: 1rem;
+    right: 1rem;
+    font-weight: bold;
 }
-.close{
-    display: none;
+.faq-title--icon::before {
+    content: "+";
 }
 #faq-1:checked + .faq-item .faq-answer,
 #faq-2:checked + .faq-item .faq-answer,
@@ -342,10 +342,8 @@
 #faq-3:checked + .faq-item .faq-title {
     border-radius: 1rem 1rem 0 0;
 }
-#faq-1:checked + .faq-item .faq-header .open,
-#faq-2:checked + .faq-item .faq-header .open,
-#faq-3:checked + .faq-item .faq-header .open {
-    display: none;
+.faq .faq-body input[type="checkbox"]:checked ~ .faq > .faq-body > .faq-item label .faq-title--icon::before {
+    content: "-";
 }
 #faq-1:checked + .faq-item .faq-header .close,
 #faq-2:checked + .faq-item .faq-header .close,
