@@ -342,7 +342,7 @@
 #faq-3:checked + .faq-item .faq-title {
     border-radius: 1rem 1rem 0 0;
 }
-.faq .faq-body input[type="checkbox"]:checked ~ .faq > .faq-body > .faq-item label .faq-title--icon::before {
+.faq .faq-body input[type="checkbox"]:checked ~  .faq-item label .faq-title--icon::before {
     content: "-";
 }
 #faq-1:checked + .faq-item .faq-header .close,
