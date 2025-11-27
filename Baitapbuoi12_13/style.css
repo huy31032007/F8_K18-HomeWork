@@ -130,11 +130,15 @@
     margin: auto;
     margin-top: 3rem;
     border-radius: 2rem;
-    position: relative;
+    position: absolute;
     padding: 2rem;
     background-color: white;
     display: none;
     z-index: 999;
+    height: auto;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 .trangchu > .free-course > .free-course--content {
     text-align: center;
@@ -213,12 +217,12 @@
     margin: auto;
     margin-top: 3rem;
     border-radius: 2rem;
-    position: relative;
+    position: absolute;
     padding: 2rem;
     background-color: white;
     display: none;
     z-index: 999;
-    height: auto;
+    inset: 0;
 }
 .trangchu > .register-advise > form > .register-advise--content > .register-advise--title, .register-advise--text{
     text-align: center;
@@ -249,6 +253,9 @@
     padding: 0.5rem;
     display: inline-block;
     font-size: 1rem;
+}
+.text-field {
+    position: relative;
 }
 .triangle{
     border-style: solid;
@@ -299,31 +306,27 @@
     top: 1rem;
     right: 1rem;
 }
-.faq-header:hover {
-    background-color: rgba(192, 132, 252, 0.15)
-}
 .faq-body {
     margin: 1rem auto;
     width: 40%;
 }
-.faq-item {
-    background: rgba(255, 255, 255, 0.6);
-    border-radius: 1rem;
-    padding: 2rem;
-    border: 1px solid rgba(192, 132, 252, 0.3);
-}
 .faq-answer {
-    margin-top: 0.5rem;
     display: none;
+    padding: 16px;
+    background-color:#bb95e6;
+    border-radius: 1rem;
 }
 .faq-title {
-    display: inline-block;
-    width: calc(100% - 1.2rem);
+    background-color: #9e5de8;
+    padding: 16px;
+    border-radius: 8px;
+    position: relative;
 }
 .open, .close {
     display: inline-block;
     font-size: 1rem;
-    font-weight: 400;
+    font-weight: 600;
+
 }
 .close{
     display: none;
@@ -332,6 +335,12 @@
 #faq-2:checked + .faq-item .faq-answer,
 #faq-3:checked + .faq-item .faq-answer {
     display: block;
+    border-radius: 0 0 1rem 1rem;
+}
+#faq-1:checked + .faq-item .faq-title,
+#faq-2:checked + .faq-item .faq-title,
+#faq-3:checked + .faq-item .faq-title {
+    border-radius: 1rem 1rem 0 0;
 }
 #faq-1:checked + .faq-item .faq-header .open,
 #faq-2:checked + .faq-item .faq-header .open,
@@ -342,4 +351,7 @@
 #faq-2:checked + .faq-item .faq-header .close,
 #faq-3:checked + .faq-item .faq-header .close {
     display: inline;
+}
+.faq-title:hover{
+    background-color: #bb95e6;
 }
