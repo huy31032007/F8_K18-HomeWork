@@ -9,6 +9,9 @@ html{
 }
 img{
     border-radius: 10px;
+    display: inline-block;
+    position: absolute;
+    left: -50px;
 }
 .header-content{
     border-bottom: 1px solid black;
@@ -20,8 +23,8 @@ img{
 }
 .header-content .content nav ul li {
     list-style: none;
-    display: inline-block;
-    padding: 10px;
+    display: block;
+    padding: 16px;
 }
 ul li .news1 {
     font-weight: bold;
@@ -31,7 +34,7 @@ ul li .news1 {
     border: 1px solid #ccc;
     background: #ffffff;
     width: 150px;
-    /*display: none;*/
+    display: none;
 }
 .sub-menu-2 {
     position: absolute;
@@ -39,9 +42,52 @@ ul li .news1 {
     background: #ffffff;
     top: 50px;
     left: 150px;
-    width: 120px;
-    /*display: none;*/
+    width: 150px;
+    display: none;
+}
+.sub-menu-1 li {
+    display: block;
+    padding: 8px;
+    position: relative;
 }
 .sub-menu-1 li:hover {
     background-color: #f5f5f5
+}
+.news:hover > .news1 {
+    color: #d62828;
+}
+.news:hover > .sub-menu-1{
+    display:block;
+}
+.sub-menu-1 li:hover > .sub-menu-2 {
+    display: block;
+}
+.sub-menu-2 li:hover {
+    color:#d62828;
+}
+.sub-menu-1 li:hover span {
+    color:#d62828;
+}
+.arrow {
+    position: absolute;
+    top: 25px;
+    left: 85px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black  transparent transparent transparent;
+}
+.arrow-left {
+    position: absolute;
+    top: 20px;
+    left: 130px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent transparent black;
+}
+.header-content .content > nav .news {
+    display: inline-block;
+    padding-right: 30px;
+}
+.news {
+    position: relative;
 }
