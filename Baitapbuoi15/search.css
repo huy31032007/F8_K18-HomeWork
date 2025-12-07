@@ -94,7 +94,7 @@
     top: 80px;
     padding: 16px 0;
 }
-.sub-top{
+.sub-items{
     position: relative;
     padding: 0 8px;
     display: flex;
@@ -107,8 +107,8 @@
 .level-2 {
     position: absolute;
     left: 100%;
-    top: 50px;
-    width: 170px;
+    top: 30px;
+    width: 160px;
     background-color: #fff;
     border-radius: 16px;
     flex-direction: column;
