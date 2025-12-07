@@ -1,0 +1,116 @@
+.white {
+    background-color: white;
+    border-radius: 50px;
+    font-size: 16px;
+    display: flex;
+    position: fixed;
+    width: 90%;
+    margin: 0 auto;
+    top: 16px;
+    right: 0;
+    left: 0;
+    height: 100px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.search nav ul li {
+    list-style: none;
+    display: inline-block;
+}
+.search{
+    position: relative;
+}
+.white img {
+    border-radius: 100px;
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    width: 160px;
+    justify-content: space-evenly;
+}
+.search{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.level-1{
+    display: flex;
+    justify-content: center;
+    width: 70%;
+}
+.sub-head{
+    padding: 16px;
+    font-weight: bold;
+    color:#334155;
+    width: 160px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.sub-top:hover .sub-head{
+    color:#a855f7;
+    background-color: rgba(168, 85, 247, 0.1);
+    border-radius: 5rem;
+}
+.start-bottom{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 300px;
+    padding: 0 20px;
+}
+.btn-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 108px;
+    height: 48px;
+    border: 3px solid rgba(156, 63, 220, 0.38);
+    border-radius: 50px;
+    font-weight: bold;
+}
+.start{
+    color: white;
+    background-color: rgb(156, 63, 220);
+}
+.sub-top{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding: 24px 0;
+}
+.level {
+    position: absolute;
+    display:none;
+    width: 200px;
+    flex-direction: column;
+    border-radius: 16px;
+    background-color: #fff;
+    top: 80px;
+    padding: 16px 0;
+}
+.sub-top{
+    position: relative;
+    padding: 0 8px;
+    display: flex;
+}
+.sub-detail {
+    font-weight: bold;
+    width: 100%;
+    padding: 16px;
+}
+.level-2 {
+    position: absolute;
+    left: 100%;
+    top: 50px;
+    width: 170px;
+    background-color: #fff;
+    border-radius: 16px;
+    flex-direction: column;
+    padding: 16px 0;
+}
