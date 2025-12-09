@@ -1,116 +1,174 @@
-.white {
-    background-color: white;
-    border-radius: 50px;
-    font-size: 16px;
-    display: flex;
-    position: fixed;
-    width: 90%;
-    margin: 0 auto;
-    top: 16px;
-    right: 0;
-    left: 0;
-    height: 100px;
-    justify-content: space-evenly;
-    align-items: center;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-.search nav ul li {
+ul {
     list-style: none;
-    display: inline-block;
 }
-.search{
-    position: relative;
+a {
+    text-decoration: none;
+    color: black;
 }
-.white img {
-    border-radius: 100px;
-    height: 50px;
+.header-item{
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 0 12px;
+    border-radius: 60px;
+}
+.header-logo{
     width: 50px;
-    object-fit: cover;
+    height: 50px;
 }
-.logo{
-    display: flex;
-    align-items: center;
-    width: 160px;
-    justify-content: space-evenly;
-}
-.search{
-    display: flex;
+.header-logo-img {
     width: 100%;
-    align-items: center;
-    justify-content: center;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 40px;
 }
-.level-1{
-    display: flex;
-    justify-content: center;
-    width: 70%;
+.navigation {
+    margin-left: 100px;
 }
-.sub-head{
-    padding: 16px;
-    font-weight: bold;
-    color:#334155;
-    width: 160px;
+.menu {
     display: flex;
-    justify-content: center;
+}
+.menu-item{
     position: relative;
-}
-.sub-top:hover .sub-head{
-    color:#a855f7;
-    background-color: rgba(168, 85, 247, 0.1);
-    border-radius: 5rem;
-}
-.start-bottom{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 300px;
-    padding: 0 20px;
-}
-.btn-header{
     display: flex;
     align-items: center;
-    justify-content: center;
-    width: 108px;
-    height: 48px;
-    border: 3px solid rgba(156, 63, 220, 0.38);
+    transition: all 0.05s ease;
+}
+.menu-link{
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 24px;
+}
+.menu-item:hover .menu-link {
+    background-color: rgba(211, 143, 211, 0.3);
     border-radius: 50px;
-    font-weight: bold;
+    color: rgb(211, 143, 211);
 }
-.start{
-    color: white;
-    background-color: rgb(156, 63, 220);
+.menu-item:hover .menu-sub{
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0px);
 }
-.sub-top{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    padding: 24px 0;
-}
-.level {
+.menu-sub{
     position: absolute;
-    display:none;
-    width: 200px;
-    flex-direction: column;
-    border-radius: 16px;
-    background-color: #fff;
-    top: 80px;
-    padding: 16px 0;
-}
-.sub-items{
-    position: relative;
-    padding: 0 8px;
-    display: flex;
-}
-.sub-detail {
-    font-weight: bold;
+    top: 100%;
     width: 100%;
+    background-color: white;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(12px);
+    transition: all 0.05s ease;
+    border-radius: 10px;
     padding: 16px;
 }
-.level-2 {
+.sub-menu-link{
+    display: flex;
+    padding: 4px 8px;
+    border-radius: 10px;
+}
+.menu-sub-child-link{
+    display: flex;
+    padding: 4px 8px;
+    border-radius: 10px;
+}
+.menu-sub-item{
+    position: relative;
+}
+.menu-sub-item:hover .sub-menu-link{
+    background-color: rgba(211, 143, 211, 0.3);
+    color: rgb(211, 143, 211);
+}
+.menu-sub-child-item:hover .menu-sub-child-link{
+    background-color: rgba(211, 143, 211, 0.3);
+    color: rgb(211, 143, 211);
+}
+.menu-sub-child-item-2:hover .menu-sub-child-link-2{
+    background-color: rgba(211, 143, 211, 0.3);
+    color: rgb(211, 143, 211);
+}
+.menu-sub-child-item-3:hover .menu-sub-child-link-3{
+    background-color: rgba(211, 143, 211, 0.3);
+    color: rgb(211, 143, 211);
+}
+.menu-sub-child-item-4:hover .menu-sub-child-link-4{
+    background-color: rgba(211, 143, 211, 0.3);
+    color: rgb(211, 143, 211);
+}
+.menu-sub-child{
     position: absolute;
+    top: 0;
     left: 100%;
-    top: 30px;
-    width: 160px;
-    background-color: #fff;
-    border-radius: 16px;
-    flex-direction: column;
-    padding: 16px 0;
+    width: 100%;
+    background-color: white;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(12px);
+    transition: all 0.05s ease;
+    border-radius: 10px;
+    padding: 16px;
+}
+.menu-sub-item:hover .menu-sub-child{
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0px);
+}
+.menu-sub-child-2{
+    position: absolute;
+    top: 90px;
+    left: 100%;
+    width: 100%;
+    background-color: white;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(12px);
+    transition: all 0.05s ease;
+    border-radius: 10px;
+    padding: 16px;
+}
+.menu-sub-child-item:hover .menu-sub-child-2{
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0px);
+}
+.menu-sub-child-3{
+    position: absolute;
+    top: 50px;
+    left: 100%;
+    width: 100%;
+    background-color: white;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(12px);
+    transition: all 0.05s ease;
+    border-radius: 10px;
+    padding: 16px;
+}
+.menu-sub-child-item-2:hover .menu-sub-child-3{
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0px);
+}
+.menu-sub-child-4{
+    position: absolute;
+    top: 50px;
+    left: 100%;
+    width: 100%;
+    background-color: white;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(12px);
+    transition: all 0.05s ease;
+    border-radius: 10px;
+    padding: 16px;
+}
+.menu-sub-child-item-3:hover .menu-sub-child-4{
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0px);
 }
