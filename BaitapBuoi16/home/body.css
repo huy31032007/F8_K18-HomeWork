@@ -1,0 +1,40 @@
+/*body*/
+.body{
+    max-width: 1200px;
+    margin: 138px auto;
+}
+.body-top{
+    background-color:#FCFCFD;
+    border-radius: 11px;
+    border: 1px solid #F1F1F3;
+    padding: 14px 30px 14px 20px;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 854px;
+}
+.body-logo{
+    background-image: url("../images/logo-2.svg");
+    background-color: #FFF4E5;
+    border-radius: 6px;
+    padding: 14px;
+    height: 34px;
+    width: 34px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.body-text{
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 48px;
+    margin: 14px 30px 14px 10px;
+}
+.body-text span{
+     color: #FF9500;
+}
+.icon{
+    background-image: url("../icons/Abstract Line.svg");
+    position: absolute;
+    background-color: #F7F7F8;
+}

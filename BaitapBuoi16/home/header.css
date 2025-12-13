@@ -1,0 +1,67 @@
+/*head*/
+header{
+    margin: 20px 30px;
+}
+.header-top{
+    background-color: #FF9500;
+    height: 55px;
+    border-radius: 8px;
+    font-size: 18px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header-top img {
+    margin-left: 23px;
+}
+.header--logo{
+    background-image: url("../images/logo.svg");
+    background-color: #FF9500;
+    height: 54px;
+    width: 54px;
+    background-repeat: no-repeat;
+    border-radius: 8px;
+    background-position: center;
+}
+.header-bottom {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+    border: 1px solid #F1F1F3;
+}
+.header-bottom ul li {
+    list-style: none;
+    padding: 14px 24px;
+}
+.header-bottom ul {
+    display: flex;
+}
+.header-bottom div{
+    display: flex;
+    align-items: center;
+}
+.header-bottom nav{
+    margin-left: 50px;
+    gap: 5px;
+}
+.header-bottom nav ul li:first-child{
+    background-color: #F1F1F3;
+    border-radius: 8px;
+}
+.header--action{
+    gap: 30px;
+}
+.header--action button:first-child{
+    color:#262626;
+    background-color:#F7F7F8;
+}
+.header--action button:nth-child(2){
+    color:#FFFFFF;
+    background-color:#FF9500;
+    border-radius: 8px;
+    padding: 14px 34px;
+}
