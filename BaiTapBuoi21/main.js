@@ -30,11 +30,11 @@ let canEnter = ( age >= 10 && mathScore > 7) || isVIP
 console.log(canEnter)
 
 //case 2
-let age = 9
-let mathScore = 10
-let isVIP = true
+age = 9
+mathScore = 10
+isVIP = true
 
-let canEnter = ( age >= 10 && mathScore > 7) || isVIP
+canEnter = ( age >= 10 && mathScore > 7) || isVIP
 
 console.log(canEnter)
 
