@@ -7,8 +7,8 @@
 // 		Under 5: Weak
 // 		Requirement: Check if the entered score is valid (0-10) before evaluating.
 
-function student(score) {
-    if (typeof score < 0 || score > 10) {
+function getStudentLevel(score) {
+    if (score < 0 || score > 10) {
         return "Invalid score"
     } else if(score >=9){
         return "Excellent"
@@ -22,7 +22,7 @@ function student(score) {
         return "Weak"
     }
 }
-console.log(student(9))
+console.log(getStudentLevel(5))
 
 //Lesson 2: Days in a Month Calculator
 // 	Using a switch case, write a function that takes a month number (1-12) as input. Print how many days are in that month.
@@ -30,29 +30,29 @@ console.log(student(9))
 // 	Hint: Months 1, 3, 5, 7, 8, 10, 12 have 31 days. Months 4, 6, 9, 11 have 30 days. Month 2 has 28 or 29 days (temporarily calculate as 28 days).
 //
 
-const month = 2;
-
-switch(month){
-    case 1:
-    case 3:
-    case 5:
-    case 7:
-    case 8:
-    case 10:
-    case 12:
-        console.log("31 days")
-        break;
-    case 4:
-    case 6:
-    case 9:
-    case 11:
-        console.log("30 days")
-        break;
-    case 2:
-        console.log("28 days")
-        break;
+function getInMonth (month) {
+    switch(month){
+        case 1:
+        case 3:
+        case 5:
+        case 7:
+        case 8:
+        case 10:
+        case 12:
+            console.log("31 days")
+            break;
+        case 4:
+        case 6:
+        case 9:
+        case 11:
+            console.log("30 days")
+            break;
+        case 2:
+            console.log("28 days")
+            break;
+    }
 }
-
+getInMonth(3)
 //	Lesson 3: Even/Odd Check
 // 		Write a single line of code using the ternary operator to check variable n. If n is even, return the string "Even", otherwise return "Odd".
 
@@ -89,7 +89,7 @@ console.log(toFahrenheit(100))
 // 			Output: amount to pay
 
 function calculateBill(electricityConsumption){
-    if(typeof electricityConsumption < 0 ){
+    if(electricityConsumption < 0 ){
         return "Invalid electricity consumption"
     }
     if(electricityConsumption <= 50){
